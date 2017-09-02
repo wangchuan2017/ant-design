@@ -15,7 +15,16 @@ A standard progress bar.
 
 ````jsx
 import { Progress } from 'antd';
-
+"itemStyle": {
+                "normal": {
+                    "color": "#5886f0",
+                    "borderColor": new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                        offset: 0,
+                        color: '#00a2ff'
+                    }, {
+                        offset: 1,
+                        color: '#70ffac'
+                    }]),
 ReactDOM.render(
   <div>
     <Progress percent={30} />
